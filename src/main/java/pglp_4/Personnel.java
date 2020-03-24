@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
-public class Personnel {
+public class Personnel implements Contact {
     private String nom;
     private String prenom;
     private String fonction;
@@ -17,6 +17,11 @@ public class Personnel {
         this.telephones.put("Pro", builder.telephones.get("pro"));
         this.ddn=builder.ddn;
         this.prenom=builder.prenom;
+    }
+
+    @Override
+    public void affiche() {
+        System.out.println(this.nom + " "+ this.telephones.toString());
     }
 
 
@@ -52,7 +57,6 @@ public class Personnel {
         public Personnel build() {
             return new Personnel(this);
         }
-
 
     }
 }
