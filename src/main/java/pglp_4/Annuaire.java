@@ -1,13 +1,22 @@
 package pglp_4;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class Annuaire implements Contact{
+public class Annuaire implements Contact {
     private String nomSection;
-    private ArrayList<Contact> listePersonnel = new ArrayList<>();
+    private ArrayList<Contact> listePersonnel;
 
+Annuaire(String nomSection){
+    this.nomSection=nomSection;
+    this.listePersonnel = new ArrayList<>();
+}
     @Override
     public void affiche() {
+    System.out.println(this.nomSection);
+    for (Contact contact : listePersonnel){
+        contact.affiche();
+    }
 
     }
 
