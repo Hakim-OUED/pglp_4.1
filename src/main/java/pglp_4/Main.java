@@ -29,6 +29,7 @@ public class Main
         a3.addContact(p3);
         a3.addContact(p5);
         a=new Annuaire(a1);
-        a.hierarchicPrint();
+       // a.hierarchicPrint();
+        a.groupPrint();
     }
 }
