@@ -1,5 +1,6 @@
 package pglp_4;
 
 public interface Contact {
-    public void affiche();
+    void affiche();
+    String hierarchic();
 }

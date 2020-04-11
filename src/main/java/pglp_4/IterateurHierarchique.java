@@ -1,12 +1,25 @@
 package pglp_4;
 
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.function.Consumer;
 
-public class IterateurHierarchique implements Iterable {
+public class IterateurHierarchique implements Iterator {
 
-    @Override
-    public Iterator iterator() {
-        return null;
-    }
+        private ArrayList<Contact> listeElement;
+
+        public IterateurHierarchique(ArrayList<Contact> contacts){
+            this.listeElement = new ArrayList<Contact>();
+            this.listeElement.addAll(contacts);
+        }
+
+        @Override
+        public Contact next(){
+            return listeElement.remove(0);
+        }
+
+        @Override
+        public boolean hasNext(){
+            return !this.listeElement.isEmpty();
+        }
+
 }

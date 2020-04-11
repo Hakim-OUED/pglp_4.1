@@ -25,6 +25,17 @@ public class Personnel implements Contact {
         System.out.println(this.nom + " "+ this.telephones.toString());
     }
 
+    @Override
+    public String hierarchic() {
+        return this.toString();
+    }
+
+    @Override
+    public String toString() {
+        return "Nom: " + this.prenom + " " + this.nom + " "
+                + "Fonction: " + this.fonction + " "
+                + "Telephone: " + this.telephones.toString();
+    }
 
     static class BuilederPersonnel{
         private String nom;
