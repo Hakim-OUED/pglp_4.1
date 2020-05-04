@@ -1,4 +1,4 @@
-package pglp_4;
+package pglp;
 
 public interface Contact {
     void affiche();

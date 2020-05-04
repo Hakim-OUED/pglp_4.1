@@ -1,8 +1,7 @@
-package pglp_4;
+package pglp;
 
 import java.time.LocalDate;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Personnel implements Contact {
@@ -10,14 +9,15 @@ public class Personnel implements Contact {
     private String prenom;
     private String fonction;
     private LocalDate ddn;
-    private Map<String, String> telephones = new HashMap<>();
+    private Telephone telephones;
 
     Personnel(BuilederPersonnel builder) {
         this.nom = builder.nom;
         this.fonction = builder.fonction;
-        this.telephones.put("Pro", builder.telephones.get("pro"));
-        this.ddn=builder.ddn;
-        this.prenom=builder.prenom;
+        this.telephones = new Telephone();
+        this.telephones = builder.telephones;
+        this.ddn = builder.ddn;
+        this.prenom = builder.prenom;
     }
 
     @Override
@@ -44,13 +44,13 @@ public class Personnel implements Contact {
         private String prenom="";
         private LocalDate ddn=LocalDate.now();
         // au moins le numero pro est obligatoire
-        private Map<String, String> telephones = new HashMap<String,String>();
+        private Telephone telephones;
 
         public BuilederPersonnel(String nom, String fonction, String numPro) {
             //obligatoire
             this.nom=nom;
             this.fonction=fonction;
-            this.telephones.put("pro",numPro);
+            this.telephones = new Telephone(numPro);
         }
 
         public BuilederPersonnel prenom(String prenom) {
@@ -62,7 +62,7 @@ public class Personnel implements Contact {
             return this;
         }
         public BuilederPersonnel addTelephone(String type, String numero) {
-            this.telephones.put(type,numero);
+            this.telephones.addNumber(type,numero);
             return this;
         }
 

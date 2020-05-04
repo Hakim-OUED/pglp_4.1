@@ -1,4 +1,4 @@
-package pglp_4;
+package pglp;
 
 import static org.junit.Assert.assertTrue;
 

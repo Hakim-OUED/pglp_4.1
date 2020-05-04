@@ -1,7 +1,6 @@
-package pglp_4;
+package pglp;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class Section implements Contact, Iterable {
     private String nomSection;

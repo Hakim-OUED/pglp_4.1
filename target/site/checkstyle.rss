@@ -19,15 +19,15 @@ under the License.
 -->
 <rss version="0.91">
   <channel>
-    <title>pglp_4 - Checkstyle report</title>
+    <title>pglp - Checkstyle report</title>
     <link>http://www.example.com</link>
-    <description>pglp_4 - Checkstyle report</description>
+    <description>pglp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2020</copyright>
     <item>
       <title>File: 6,
              Errors: 0,
-             Warnings: 134,
+             Warnings: 210,
              Infos: 0
       </title>
             <link>http://www.example.com/checkstyle.html</link>
@@ -46,27 +46,13 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/checkstyle.html#pglp_4.IterateurHierarchique.java">pglp_4/IterateurHierarchique.java</a>
+                  <a href="http://www.example.com/checkstyle.html#pglp.Annuaire.java">pglp/Annuaire.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  4
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#pglp_4.Contact.java">pglp_4/Contact.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  2
+                  42
                 </td>
                 <td>
                   0
@@ -74,27 +60,13 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/checkstyle.html#pglp_4.Main.java">pglp_4/Main.java</a>
+                  <a href="http://www.example.com/checkstyle.html#pglp.Personnel.java">pglp/Personnel.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  34
-                </td>
-                <td>
-                  0
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="http://www.example.com/checkstyle.html#pglp_4.Annuaire.java">pglp_4/Annuaire.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  24
+                  68
                 </td>
                 <td>
                   0
@@ -102,13 +74,13 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/checkstyle.html#pglp_4.Personnel.java">pglp_4/Personnel.java</a>
+                  <a href="http://www.example.com/checkstyle.html#pglp.Main.java">pglp/Main.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  63
+                  38
                 </td>
                 <td>
                   0
@@ -116,13 +88,41 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="http://www.example.com/checkstyle.html#pglp_4.IterateurGroupe.java">pglp_4/IterateurGroupe.java</a>
+                  <a href="http://www.example.com/checkstyle.html#pglp.Contact.java">pglp/Contact.java</a>
                 </td>
                 <td>
                   0
                 </td>
                 <td>
-                  7
+                  3
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.example.com/checkstyle.html#pglp.IterateurHierarchique.java">pglp/IterateurHierarchique.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://www.example.com/checkstyle.html#pglp.Section.java">pglp/Section.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  45
                 </td>
                 <td>
                   0
